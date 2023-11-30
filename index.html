@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Bapper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl text-center mt-10">
+        Welcome To Your Functional
+        <span class="text-purple-600 font-semibold">Bapper Bank</span>!!!
+      </h2>
+    </header>
+    <main class="w-1/2 mx-auto bg-indigo-400 mt-10 px-8 py-12 rounded">
+      <section>
+        <h4 class="text-5xl text-white mb-5 font-bold">Please Login</h4>
+        <label class="text-white text-3xl mb-5 font-semibold mt-5" for="email"
+          >Your Email</label
+        >
+        <input
+          class="block w-3/4 rounded px-2 py-2 mt-2"
+          type="email"
+          name=""
+          id="email-field"
+          placeholder="Please Enter Your Email"
+        />
+        <label class="text-white text-2xl mb-5 font-semibold" for="password"
+          >Your Password</label
+        >
+        <input
+          class="block w-3/4 rounded px-2 py-2 mt-2"
+          type="password"
+          name=""
+          id="password-field"
+          placeholder="Please Enter Your Secret Password"
+        />
+        <button
+          type="submit"
+          id="btn-submit"
+          class="bg-red-600 font-bold px-4 py-2 text-white mt-5 rounded"
+        >
+          Submit
+        </button>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>

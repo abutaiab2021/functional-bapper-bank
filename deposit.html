@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Bapper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl text-center mt-10">
+        Please Deposit And Withdraw Your
+        <span class="text-purple-600 font-semibold">Mooooooney</span>!!!
+      </h2>
+    </header>
+    <main>
+      <section class="w-3/4 mx-auto">
+        <div class="grid grid-cols-3 gap-4 mt-10">
+          <div class="bg-red-400 px-8 py-4 text-white rounded">
+            <h4 class="text-2xl font-semibold">Deposit Total</h4>
+            <h5 class="text-3xl font-bold">
+              $<span id="deposit-total">00</span>
+            </h5>
+          </div>
+          <div class="bg-green-400 px-8 py-4 text-white rounded">
+            <h4 class="text-2xl font-semibold">Withdraw Total</h4>
+            <h5 class="text-3xl font-bold">
+              $<span id="withdraw-total">00</span>
+            </h5>
+          </div>
+          <div class="bg-blue-400 px-8 py-4 text-white rounded">
+            <h4 class="text-2xl font-semibold">Balance Total</h4>
+            <h5 class="text-3xl font-bold">
+              $<span id="balance-total">1240</span>
+            </h5>
+          </div>
+        </div>
+      </section>
+      <section class="w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4 mt-5">
+          <div class="bg-purple-400 px-8 py-4 rounded">
+            <h4 class="text-2xl text-white font-semibold">
+              Please Deposit Your Money
+            </h4>
+            <input
+              class="block w-3/4 rounded px-2 py-2 mt-2"
+              type="text"
+              name=""
+              id="deposit-field"
+              placeholder="Please Enter Your deposit Money"
+            />
+            <button
+              type="submit"
+              id="btn-deposit"
+              class="bg-green-800 font-bold px-4 py-2 text-white mt-2 rounded"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-amber-400 px-8 py-4 rounded">
+            <h4 class="text-2xl text-white font-semibold">
+              Please Withdraw Your Money
+            </h4>
+            <input
+              class="block w-3/4 rounded px-2 py-2 mt-2"
+              type="text"
+              name=""
+              id="withdraw-field"
+              placeholder="Please Enter Your Withdraw Money"
+            />
+            <button
+              type="submit"
+              id="btn-withdraw"
+              class="bg-red-800 font-bold px-4 py-2 text-white mt-2 rounded"
+            >
+              Withdraw
+            </button>
+            <button
+              type="submit"
+              id="btn-exit"
+              class="bg-red-600 font-bold px-4 py-2 text-white mt-2 rounded"
+            >
+              Exit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>
